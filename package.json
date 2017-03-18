@@ -1,0 +1,29 @@
+{
+  "name": "sequelize-model-tenant",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vpsouza/sequelize-model-tenant.git"
+  },
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "author": "Vinicius Piedade de Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vpsouza/sequelize-model-tenant/issues"
+  },
+  "homepage": "https://github.com/vpsouza/sequelize-model-tenant#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "sequelize": "^3.30.2"
+  }
+}
