@@ -1,6 +1,6 @@
 {
   "name": "sequelize-model-tenant",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,8 +18,14 @@
   "bugs": {
     "url": "https://github.com/vpsouza/sequelize-model-tenant/issues"
   },
+  "jest": {
+    "verbose": true
+  },
   "homepage": "https://github.com/vpsouza/sequelize-model-tenant#readme",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-jest": "^20.0.3",
+    "babel-preset-es2015": "^6.24.1",
     "jest": "^20.0.4"
   },
   "dependencies": {

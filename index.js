@@ -1,8 +1,8 @@
 'use strict';
 
-const fs = require('fs'),
-	path = require('path'),
-	Sequelize = require('sequelize');
+import fs from 'fs';
+import path from 'path';
+import Sequelize from 'sequelize';
 
 function initNewDB(dirName, config, server, tenantID, withoutPool) {
 
@@ -57,7 +57,7 @@ function initNewDB(dirName, config, server, tenantID, withoutPool) {
 	return db;
 }
 
-module.exports = function (dirName, dbConfig, server, tenantID, withoutPool) {
+export default function (dirName, dbConfig, server, tenantID, withoutPool) {
 
 	if (withoutPool) {
 		return initNewDB(dirName, dbConfig, server, tenantID, withoutPool);
@@ -68,4 +68,4 @@ module.exports = function (dirName, dbConfig, server, tenantID, withoutPool) {
 
 		return server[tenantID];
 	}
-}
+};

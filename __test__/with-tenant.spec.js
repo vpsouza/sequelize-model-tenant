@@ -1,6 +1,6 @@
 'use strict';
 
-const modelTenant = require('../index');
+import modelTenant from '../index';
 
 jest.mock('fs', () => ({
 	readdirSync: jest.fn((dirName) => ['user.js'])
@@ -10,7 +10,7 @@ jest.mock('sequelize', () => {
 	return jest.fn((database, username, password, dbConnectonOptions) => ({
 		import: jest.fn(path => ({
 			name: 'user',
-			schema: schemaName => {
+			schema: function(schemaName) {
 				this['associate'] = (models) => {}
 				this.$schema = schemaName;
 				return this;
